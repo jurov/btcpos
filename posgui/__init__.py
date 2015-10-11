@@ -297,9 +297,8 @@ class POS:
             for x in range(retries):
                 address = ""
                 try:
-                    #res = self.server.addrequest(amount)
-                    #address = res['address']
-                    address=u'12CVhw1GZEKuSYva3ByqcxPtbQSoJ9dCPo'
+                    res = self.server.addrequest(amount)
+                    address = res['address']
                 except:
                     pass #TODO
                 if address:
